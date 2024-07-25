@@ -5,8 +5,8 @@ import './index.css'
 import MyRoute from './MyRoute';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+ 
   
     <MyRoute />
-  </React.StrictMode>,
+  
 )

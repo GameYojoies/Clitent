@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     logout(() => {
-      navigate('/login');  // Redirect to the login page after logout
+      navigate("/login"); // Redirect to the login page after logout
     });
   };
 
@@ -24,17 +24,17 @@ const Navbar = () => {
             <NavLink to="/" className="navbar-item">
               Home
             </NavLink>
-          
+            <NavLink to="/create">CreateBlog</NavLink>
             {!getUser() && (
               <NavLink to="/login" className="navbar-item">
                 Login
               </NavLink>
             )}
-            {getUser() && (
+            {/* {getUser() && (
               <NavLink to="/create" className="navbar-item">
-              CreateBlog
-            </NavLink>
-            )}
+                CreateBlog
+              </NavLink>
+            )} */}
             {getUser() && (
               <button className="navbar-item" onClick={handleLogout}>
                 Logout
